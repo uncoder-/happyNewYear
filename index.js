@@ -19,7 +19,7 @@ function initPage() {
     gradient.addColorStop(0.75, "#FFFF00");
     gradient.addColorStop(1, "#7F00FF");
     // 初始化数据
-    var num = 75;
+    var num = 55;
     var sonwPoints = getSonws();
     var wordPoints = getWords();
     var starPoints = getStar();
@@ -122,7 +122,7 @@ function initPage() {
             }
             if (y >= endy) {
                 ctx.font = '20px xxoo';
-                ctx.fillStyle = '#FF8000';
+                ctx.fillStyle = point.color;
                 ctx.fillText(words[i], endx, 480);
             } else {
                 var rangeX = 100;
@@ -225,7 +225,7 @@ function initPage() {
         return points;
     }
     function StarPixel(x, y, endx, endy, color) {
-        var colors = ['#FF0000', '#FF8000', '#FFFF00', '#7F00FF'];
+        var colors = ['#FF0000', '#FF8000', '#FFFF00', '#7F00FF','#FF0000'];
         // 起点
         this.x = x;
         this.y = y;
