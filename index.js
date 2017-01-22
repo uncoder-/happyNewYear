@@ -9,7 +9,7 @@ function initPage() {
         4: document.querySelector("#snow4")
     }
     var canvasHeight = window.innerHeight;
-    var canvasWidth = 375;
+    var canvasWidth = window.innerWidth;
     var myCanvas = document.querySelector('#happy-new-year');
     myCanvas.setAttribute('height',canvasHeight);
     myCanvas.setAttribute('width',canvasWidth);
