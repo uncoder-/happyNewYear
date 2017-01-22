@@ -217,9 +217,9 @@ function initPage() {
     }
     // 流星点
     function getStar() {
-        let points = [];
-        for (let i = 0; i < 5; i++) {
-            let point = new StarPixel(220 + 20 * i - 450, 0, 220 + 22 * i, 480, i);
+        var points = [];
+        for (var i = 0; i < 5; i++) {
+            var point = new StarPixel(220 + 20 * i - 450, 0, 220 + 22 * i, 480, i);
             points.push(point);
         }
         return points;
