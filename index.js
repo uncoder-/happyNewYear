@@ -5,8 +5,7 @@ function initPage() {
     var snowStyle = {
         1: document.querySelector("#snow1"),
         2: document.querySelector("#snow2"),
-        3: document.querySelector("#snow3"),
-        4: document.querySelector("#snow4")
+        3: document.querySelector("#snow3")
     }
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
@@ -246,7 +245,7 @@ function initPage() {
         this.moveRange = config['moveRange']||1;
         this.delay = config['delay']||0;
         this.delayCount = 0;
-        this.img = config['img']||Math.round(Math.random()*3+1);
+        this.img = config['img']||Math.round(Math.random()*2+1);
     }
     // 返回切点位置
     function returnQD(cx,cy,x,y,radius){
