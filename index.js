@@ -104,7 +104,7 @@ function initPage() {
     // 流星文字动画
     function initStar() {
         ctx.save();
-        var words = ['by','小','傻','师','哥','祝'];
+        var words = ['by','小','傻','师','哥'];
         for(var i=0;i<5;i++){
             var point = starPoints[i];
             ctx.beginPath();
@@ -146,14 +146,14 @@ function initPage() {
         // 名字
         var name = window.decodeURIComponent(window.location.search.split('=')[1]);
         ctx.save();
-        ctx.fillStyle = "#000";
+        ctx.fillStyle = "#eee";
         ctx.font = '75px ooxx';
         ctx.fillText(name,(canvasWidth-75*name.length)/2,canvasHeight/2-100);
         ctx.restore();
 
         // 祝福语
         ctx.save();
-        ctx.fillStyle = "#000";
+        ctx.fillStyle = "#eee";
         ctx.font = '90px ooxx';
         ctx.fillText('新',(canvasWidth-90*4)/2,canvasHeight/2+10);
         ctx.fillText('年',(canvasWidth-90*4)/2+90,canvasHeight/2+25)
@@ -216,8 +216,8 @@ function initPage() {
     // 流星点
     function getStar() {
         let points = [];
-        for(let i=0;i<6;i++){
-            let point = new StarPixel(250+20*i-450,0,200+25*i+i*7,480,i);
+        for(let i=0;i<5;i++){
+            let point = new StarPixel(200+20*i-450,0,200+25*i+i*7,480,i);
             points.push(point);
         }
         return points;
