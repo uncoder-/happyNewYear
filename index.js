@@ -4,8 +4,7 @@ document.addEventListener("WeixinJSBridgeReady", function () {
     window.addEventListener("DOMContentLoaded", function () {
         initPage();
     });
-}, false); 
-
+}, false);
 function initPage() {
     var snowStyle = {
         1: document.querySelector("#snow1"),
@@ -40,7 +39,7 @@ function initPage() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         // 背景
         ctx.save();
-        ctx.fillStyle = '#000';
+        ctx.fillStyle = 'white';
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
         initSnow();
