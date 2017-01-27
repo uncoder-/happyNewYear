@@ -23,6 +23,9 @@ function initPage() {
     var sonwPoints = getSonws();
     var wordPoints = getWords();
     var starPoints = getStar();
+    
+    // 隐藏loading
+    document.querySelector('.loading').style.display = "none";
 
     // 渲染动画
     var rid = window.requestAnimationFrame(step);
