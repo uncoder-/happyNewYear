@@ -32,6 +32,7 @@ function initPage() {
     var starPoints = getStar();
 
     // 隐藏loading
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     document.querySelector('.loading').style.display = "none";
 
     // 渲染动画
