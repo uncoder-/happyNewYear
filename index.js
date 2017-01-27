@@ -3,6 +3,7 @@ document.addEventListener("WeixinJSBridgeReady", function () {
     document.querySelector("#mp3").play();
 }, false);
 window.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#mp3").play();
     initPage();
 });
 function initPage() {
