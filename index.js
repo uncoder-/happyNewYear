@@ -186,7 +186,7 @@ function initPage() {
                 var index = canvasWidth * (j - 1) + i;
                 var a = colorsData[(index - 1) * 4 + 3];
                 if (a > 0) {
-                    var size = Math.round(Math.random() * 5 + 7);
+                    var size = Math.round(Math.random() * 4 + 8);
                     var config = {
                         x: x,
                         y: 0,
