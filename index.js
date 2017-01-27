@@ -1,4 +1,8 @@
 /**初始化 */
+document.addEventListener("WeixinJSBridgeReady", function () { 
+    document.querySelector("#mp3").play();
+}, false); 
+
 function initPage() {
     var snowStyle = {
         1: document.querySelector("#snow1"),
@@ -23,7 +27,7 @@ function initPage() {
     var sonwPoints = getSonws();
     var wordPoints = getWords();
     var starPoints = getStar();
-    
+
     // 隐藏loading
     document.querySelector('.loading').style.display = "none";
 
