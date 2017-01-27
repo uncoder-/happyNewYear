@@ -1,10 +1,10 @@
 /**初始化 */
 document.addEventListener("WeixinJSBridgeReady", function () { 
     document.querySelector("#mp3").play();
-    window.addEventListener("DOMContentLoaded", function () {
-        initPage();
-    });
 }, false);
+window.addEventListener("DOMContentLoaded", function () {
+    initPage();
+});
 function initPage() {
     var snowStyle = {
         1: document.querySelector("#snow1"),
