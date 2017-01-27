@@ -234,7 +234,7 @@ function initPage() {
         return points;
     }
     function StarPixel(x, y, endx, endy, color) {
-        var colors = ['#FF0000', '#FF8000', '#FFFF00', '#7F00FF','#FF0000'];
+        var colors = ['#FF0000', '#FF8000', '#FF0000', '#7F00FF','#FF0000'];
         // 起点
         this.x = x;
         this.y = y;
