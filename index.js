@@ -1,6 +1,9 @@
 /**初始化 */
 document.addEventListener("WeixinJSBridgeReady", function () { 
     document.querySelector("#mp3").play();
+    window.addEventListener("DOMContentLoaded", function () {
+        initPage();
+    });
 }, false); 
 
 function initPage() {
@@ -283,6 +286,3 @@ function initPage() {
         return [{ x: cx + __x1, y: cy + __y1 }, { x: cx - __x2, y: cy - __y2 }]
     }
 }
-window.addEventListener("DOMContentLoaded", function () {
-    initPage();
-});
